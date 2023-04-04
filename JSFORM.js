@@ -21,15 +21,16 @@
 
     }
     else{
-       
-        localStorage.setItem('name',nameInput.value);
-        localStorage.setItem('email',emailInput.value);
-       
+        let myobj={
+            name:nameInput.value,
+            email:emailInput.value
+        }
+        myobj_stringified=JSON.stringify(myobj)
+        localStorage.setItem('details',myobj_stringified)
 
         //clear fields
         nameInput.value='';
         emailInput.value="";
-
     }
  }
  
