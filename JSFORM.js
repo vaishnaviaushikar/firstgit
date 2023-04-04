@@ -11,7 +11,7 @@
  myForm.addEventListener('submit', onsubmit)
  function onsubmit(e){
     e.preventDefault();
-    console.log(nameInput.value)
+    
     if(nameInput.value== ""|| emailInput.value=="")
     {
         //alert("please enter fields");
